@@ -1,0 +1,62 @@
+@use '../varibales' as variables;
+
+.section-main{
+    display: flex;
+    width: 1200px;
+    height: 583px;
+    margin-inline: auto;
+    background-color: variables.$backgroun-color;
+    color: white;
+    font-family: "Source Serif 4", serif;
+    margin-bottom: 60px;
+}
+
+.section-main__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 70px 0 60px;
+}
+
+.section-main__p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section-main__p-cooperation {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.buildingPng {
+    overflow: hidden;
+    width: 256px;
+    margin-left: auto;
+}
+
+.slider {
+    position: relative;
+}
+
+.slide {
+    position: relative;
+    z-index: 0;
+}
+
+.switch-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 520px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.rightArrow {
+    transform: rotate(180deg);
+}
+
