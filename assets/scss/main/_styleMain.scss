@@ -2,13 +2,9 @@
 
 .section-main{
     display: flex;
-    width: 1200px;
     height: 583px;
-    margin-inline: auto;
     background-color: variables.$backgroun-color;
     color: white;
-    font-family: "Source Serif 4", serif;
-    margin-bottom: 60px;
 }
 
 .section-main__wrapper {
