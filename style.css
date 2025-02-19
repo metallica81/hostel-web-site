@@ -19,6 +19,12 @@
   margin-left: auto;
   gap: 70px;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .nav {
+    padding-top: 5px;
+    gap: 20px;
+  }
+}
 
 .header__nav-button {
   background-color: #fff;
@@ -36,6 +42,11 @@
   height: 80px;
   margin-inline: auto;
   align-items: center;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .panel {
+    width: 700px;
+  }
 }
 
 .adventageSection {

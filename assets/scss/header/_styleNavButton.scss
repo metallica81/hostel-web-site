@@ -1,7 +1,13 @@
+@use '../mixins' as mixins;
+
 .nav {
     display: flex;
     margin-left: auto;
-    gap: 70px
+    gap: 70px;
+    @include mixins.screen-respond(large-medium-screens) {
+        padding-top: 5px;
+        gap: 20px;
+    }
 }
 
 .header__nav-button {
