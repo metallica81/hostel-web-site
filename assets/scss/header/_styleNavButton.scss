@@ -1,12 +1,21 @@
+@use '../mixins' as mixins;
+
 .nav {
     display: flex;
     margin-left: auto;
-    gap: 70px
+    gap: 70px;
+    @include mixins.screen-respond(large-medium-screens) {
+        padding-top: 5px;
+        gap: 20px;
+    }
 }
 
 .header__nav-button {
     background-color: #fff;
     border: none;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 16px;
+    font-size: 14px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }

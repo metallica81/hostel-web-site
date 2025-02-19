@@ -1,0 +1,33 @@
+@use '../varibales' as variables;
+
+.section-main{
+    display: flex;
+    height: 683px;
+    color: white;
+    padding-top: 140px;
+}
+
+.section-main__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 724px;
+    padding: 50px 70px 0 60px;
+    background-color: variables.$backgroun-color;
+}
+
+.section-main__p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section-main__p-cooperation {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.buildingPng {
+    overflow: hidden;
+    width: 256px;
+    margin-left: auto;
+}

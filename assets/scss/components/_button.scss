@@ -1,11 +1,11 @@
-.button-book {
-    width: 170px;
+.button {
     height: 56px;
     border: none;
     font-family: 'Roboto', sansserif;
     font-size: 20px;
     font-weight: 200;
-    background-color: rgba(249, 249, 249, 0.15);
-    color: white;
+    background-color: rgba(249, 249, 249, 1);
+    color: black;
+    width: 281px;
     cursor: pointer;
 }

@@ -4,10 +4,20 @@
 @import "./assets/scss/header/_stylePanel.scss";
 @import "./assets/scss/main/_styleAdvent.scss";
 @import "./assets/scss/main/_styleBookButton.scss";
-@import "./assets/scss/main/_varibales.scss";
+@import "./assets/scss/_varibales.scss";
+@import "./assets/scss/main/styleMain";
+@import "./assets/scss/main/styleRooms";
+@import "./assets/scss/components/section";
+@import "./assets/scss/components/h2";
+@import "./assets/scss/main/styleService";
+@import "./assets/scss/components/button";
+@import "./assets/scss/footer/footer";
+@import "./assets/scss/components/slider/slider";
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Source Serif 4", "Inter", "system-ui", "Avenir", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }

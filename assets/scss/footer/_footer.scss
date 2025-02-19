@@ -1,0 +1,83 @@
+@use '../varibales' as variables;
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+.footer-wrapper {
+    height: auto;
+    background-color: variables.$backgroun-color;
+    color: white;
+    font-weight: 400;
+}
+
+.footer-container {
+    width: 1200px;
+    margin-inline: auto;
+    height: auto;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.upperWrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #4E4D93;
+    padding:  15px;
+}
+
+.lowerWrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.locationFooter {
+    display: flex;
+    img {
+        width: 22px;
+        margin-right: 10px;
+    }
+    align-items: center;
+}
+
+.booking {
+    display: flex;
+    span:first-child {
+        display: block;
+        margin-block: auto;
+        margin-right: 21px;
+    }
+    font-size: 20px;
+}
+
+.phoneNums {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: underline;
+    padding-left: 20px;
+    border-left: 2px solid white;
+}
+
+.copyrights {
+    display: flex;
+    width: 150px;
+    align-items: center;
+    img {
+        width: 22px;
+        margin-right: 10px;
+    }
+}
+
+.refIcons {
+    display: flex;
+    gap: 30px;
+    margin-right: 60px;
+    img:last-child {
+        width: 20px;
+    }
+}

@@ -1,8 +1,12 @@
+@use '../mixins' as mixins;
+
 .panel {
     display: flex;
     width: 1200px;
     height: 80px;
     margin-inline: auto;
     align-items: center;
-    margin-bottom: 60px;
+    @include mixins.screen-respond(large-medium-screens) {
+        width: 700px;
+    }
 }

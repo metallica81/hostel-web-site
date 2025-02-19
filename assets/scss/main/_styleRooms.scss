@@ -1,0 +1,26 @@
+@use '../varibales' as variables;
+
+section.room-section {
+    height: 677px;
+    width: 100%;
+    background-color: variables.$backgroun-color;
+}
+
+.wrapper {
+    width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    gap: 160px;
+    img {
+        width: 281px;
+    }
+}
+
+.room-container {
+    color: white;
+    h2 {
+        padding-block: 20px;
+    }
+    width: 1200px;
+    margin-inline: auto;
+}

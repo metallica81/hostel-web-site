@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/iconHostel.svg" />
+    <link rel="icon" type="image/x-icon" href="/iconHostel.svg" />
     <link rel="stylesheet" href="style.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <script src="https://api-maps.yandex.ru/v3/?apikey=5af98290-ccb0-4181-a537-6c0de1eb45c2&lang=ru_RU" defer></script>
+    <script src="assets/scss/footer/initMap.js"></script>
+    <!-- <script type="module" src="./assets/scss/footer/map.js" defer></script> -->
+    <script src="assets/scss/components/slider/slide.js" defer></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <title>Высотка</title>
 </head>
@@ -20,57 +26,150 @@
                 <img src="assets/scss/components/logo.svg" alt='logo'/>
             </div>
             <nav class="nav">
-                <button class="header__nav-button">Главная</button>
-                <button class="header__nav-button">Преимущества</button>
-                <button class="header__nav-button">Номера</button>
-                <button class="header__nav-button">Отзывы</button>
-                <button class="header__nav-button">Местопололжение</button>
-                <button class="header__nav-button">Бронировать</button>
+                <button class="header__nav-button"><a href="#main">Главная</a></button>
+                <button class="header__nav-button"><a href="#adventages">Преимущества</a></button>
+                <button class="header__nav-button"><a href="#rooms">Номера</a></button>
+                <button class="header__nav-button"><a href="#location">Местопололжение</a></button>
+                <button class="header__nav-button"><a href="#book">Бронировать</a></button>
             </nav>
         </div>
     </header>
-    <section class="section-main">
-        <div class="section-main__wrapper">
-            <p class="section-main__p">
-                Эконом-хостел с широким ассортиментом услуг по доступной цене в Братске
-            </p>
-            <button class="button-book">
-                Бронировать
-            </button>
-            <p class="section-main__p-cooperation">
-                Активно сотрудничаем с крупными организациями, к примеру, 
-                БРАЗ и ИЛИМ. Предлагаем выгодные условия проживания и трёхразовое питание
-            </p>
-            <img src="assets/scss/components/bigLogo.svg" alt="" class='buildingPng'/>
-        </div>
-        
-        <div class="slider">
-            <img src="assets/scss/header/entering.png" alt="photo of entrance" class='slide'/>
-            <div class="switch-wrapper">
-                <img src="assets/scss/assets/leftArrow.svg" alt="left arrow" class='arrow leftArrow'/>
-                <img src="assets/scss/assets/leftArrow.svg" alt="right arrow" class='arrow rightArrow'/>
+    <main>
+        <section class="section section-main" id="main">
+            <div class="section-main__wrapper">
+                <p class="section-main__p">
+                    Эконом-хостел с широким ассортиментом услуг по доступной цене в Братске
+                </p>
+                <a href="#book"><button class="button-book">
+                    Бронировать
+                </button></a>
+                <p class="section-main__p-cooperation">
+                    Активно сотрудничаем с крупными организациями, к примеру, 
+                    БРАЗ и ИЛИМ. Предлагаем выгодные условия проживания и трёхразовое питание
+                </p>
+                <img src="assets/scss/components/bigLogo.svg" alt="" class='buildingPng'/>
             </div>
-        </div>
-    </section>
-    <section class="adventageSection">
-            <h2>Наши преимущества</h2>
-            <div class="wrapperAdventage">
-                <div class="card">
-                    <img src="assets/scss/assets/price.svg" alt="">
-                    <h3>Доступные цены</h3>
-                    <p>Цены за аренду наших номеров существенно ниже, чем средние по рынку</p>
-                </div>
-                <div class="card">
-                    <img src="assets/scss/assets/location.svg" alt="">
-                    <h3>Удобное местоположения</h3>
-                    <p>Мы находимся рядом в шаговой доступности от вокзала</p>
-                </div>
-                <div class="card">
-                    <img src="assets/scss/assets/choice.svg" alt="">
-                    <h3>Широкий выбор услуг</h3>
-                    <p>Вместе с гостиницей в здании есть столовая, тренажёрный зал и баня</p>
+            
+            <div class="slider">
+                
+                <img src="assets/scss/header/entering.png" alt="photo of entrance" class='slide active'/>
+                <img src="assets/photo/hostel/hostel1.jpg" alt="" class='slide' />
+                <img src="assets/photo/hostel/hostel2.jpg" alt="" class='slide' />
+                <img src="assets/photo/hostel/hostel3.jpg" alt="" class='slide' />
+                <img src="assets/photo/hostel/hostel4.jpg" alt="" class='slide' />
+                <img src="assets/photo/hostel/hostel5.jpg" alt="" class='slide' />
+                
+                
+                <div class="switch-wrapper">
+                    <img src="assets/scss/assets/leftArrow.svg" alt="left arrow" class='arrow leftArrow'/>
+                    <img src="assets/scss/assets/leftArrow.svg" alt="right arrow" class='arrow rightArrow'/>
                 </div>
             </div>
         </section>
+        <section class="adventageSection" id="adventages">
+                <h2 class="h2">Наши преимущества</h2>
+                <div class="wrapperAdventage">
+                    <div class="card">
+                        <img src="assets/scss/assets/price.svg" alt="">
+                        <h3>Доступные цены</h3>
+                        <p>Цены за аренду наших номеров существенно ниже, чем средние по рынку</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/scss/assets/location.svg" alt="">
+                        <h3>Удобное местоположения</h3>
+                        <p>Мы находимся рядом в шаговой доступности от вокзала</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/scss/assets/choice.svg" alt="">
+                        <h3>Широкий выбор услуг</h3>
+                        <p>Вместе с гостиницей в здании есть столовая, тренажёрный зал и баня</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section room-section" id="rooms">
+                <div class="room-container">
+                    <h2 class="h2">Номера</h2>
+    
+                    <div class="wrapper">
+                        <div class="card">
+                            <img src="assets/scss/assets/place4.png" alt="4-places room">
+                            <span>4-х местный номер</span>
+                            <span>800руб/сутки</span>
+                        </div>
+                        <div class="card">
+                            <img src="assets/scss/assets/place6.png" alt="6-places room">
+                            <span>6-и местный номер</span>
+                            <span>800руб/сутки</span>
+                        </div>
+                        <div class="card">
+                            <img src="assets/scss/assets/place8.png" alt="8-places room">
+                            <span>8-и местный номер</span>
+                            <span>800руб/сутки</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section" id="services">
+                <div class="container">
+                    <h2 class="h2">Дополнительные услуги</h2>
+                    <div class="wrapper">
+                        <div class="card serv-card">
+                            <h3 class="h3">Кафе</h3>
+                            <p>В эконом-столовой подают сытные обеды: первое, второе, свежие салаты и домашнюю выпечку по доступным ценам.</p>
+                            <img src="assets/scss/assets/cafe1.jpg" alt="cafe"><button class="button">Подробнее</button></div>
+                        <div class="card serv-card">
+                            <h3 class="h3">Спортивный комплекс</h3>
+                            <p>У нас есть тренажёрный зал, настольный теннис, футбольное поле, волейбольное поле и большой теннис со снаряжением для каждого вида спорта</p>
+                            <img src="assets/scss/assets/gym.png" alt="gym"><button class="button">Подробнее</button></div>
+                        <div class="card serv-card">
+                            <h3 class="h3">Баня</h3>
+                            <p>Присутствует баня с купелью за 1800 рублей в час.</p>
+                            <img src="assets/photo/sauna/sauna_photo10.jpg" alt="sauna"><button class="button">Подробнее</button></div>
+                        </div>
+                    </div>
+                    
+            </section>
+    </main>
+
+    <footer class="footer" id="location">
+        <h2 class="h2">Местоположение</h2>
+        <div class="location-container">
+            <div id="map"></div>
+            <div class="footer-wrapper">
+                <div class="footer-container">
+                    <div class="upperWrapper">
+                        <div class="locationFooter">
+                            <img src="assets/scss/footer/locationFooter.svg" alt="location">
+                            <p>Южная 18а, г. Братск,<br>почтовый индекс 665708</p>
+                        </div>
+                        <div class="booking">
+                            <span>Бронировать по номеру</span>
+                            <div class="phoneNums">
+                                <span>
+                                    +7‒914‒896‒10‒98
+                                </span>
+                                <span>
+                                    +7‒924‒634‒54‒10
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lowerWrapper" id="book">
+                        <div class="copyrights">
+                            <img src="assets/scss/footer/copyright.svg" alt="copyright">
+                            <span>ООО «Высота»</span>
+                        </div>
+                        <div class="refIcons">
+                            <a href="https://goo.su/Od3Gq"><img src="assets/scss/footer/yandexMap.svg" alt="yandexMap"></a>
+                            <a href="https://2gis.ru/bratsk/firm/70000001057164164"><img src="assets/scss/footer/gisMap.svg" alt="gisMap"></a>
+                            <a href="https://www.instagram.com/sport.holl/"><img src="assets/scss/footer/inst.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

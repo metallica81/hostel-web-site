@@ -1,0 +1,39 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 520px;
+    height: 543px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    //object-fit: cover; /* Масштабирование, чтобы картинки не сжимались */
+}
+
+.slide.active {
+    opacity: 1;  /* Делает слайд видимым */
+    z-index: 1;
+}
+
+.switch-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 520px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.rightArrow {
+    transform: rotate(180deg);
+}
