@@ -1,14 +1,17 @@
+@charset "UTF-8";
 .spanLogo {
   font-family: "Oswald", serif;
   font-size: 32px;
   font-weight: 500;
   text-transform: uppercase;
-  padding-right: 3px;
 }
 
 .header {
   width: 100%;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  background-color: white;
+  z-index: 3;
 }
 
 .nav {
@@ -20,8 +23,11 @@
 .header__nav-button {
   background-color: #fff;
   border: none;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 16px;
+  font-size: 14px;
+}
+.header__nav-button a {
+  text-decoration: none;
+  color: black;
 }
 
 .panel {
@@ -30,7 +36,6 @@
   height: 80px;
   margin-inline: auto;
   align-items: center;
-  margin-bottom: 60px;
 }
 
 .adventageSection {
@@ -67,20 +72,23 @@
   font-weight: 200;
   background-color: rgba(249, 249, 249, 0.15);
   color: white;
+  cursor: pointer;
 }
 
 .section-main {
   display: flex;
-  height: 583px;
-  background-color: #2A254B;
+  height: 683px;
   color: white;
+  padding-top: 140px;
 }
 
 .section-main__wrapper {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 724px;
   padding: 50px 70px 0 60px;
+  background-color: #2A254B;
 }
 
 .section-main__p {
@@ -97,32 +105,6 @@
   overflow: hidden;
   width: 256px;
   margin-left: auto;
-}
-
-.slider {
-  position: relative;
-}
-
-.slide {
-  position: relative;
-  z-index: 0;
-}
-
-.switch-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  width: 520px;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0.65);
-}
-
-.rightArrow {
-  transform: rotate(180deg);
 }
 
 section.room-section {
@@ -177,15 +159,133 @@ section.room-section {
   background-color: rgb(249, 249, 249);
   color: black;
   width: 281px;
+  cursor: pointer;
 }
 
 #map {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 600px;
+}
+
+.footer-wrapper {
+  height: auto;
+  background-color: #2A254B;
+  color: white;
+  font-weight: 400;
+}
+
+.footer-container {
+  width: 1200px;
+  margin-inline: auto;
+  height: auto;
+  padding-block: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upperWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4E4D93;
+  padding: 15px;
+}
+
+.lowerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationFooter {
+  display: flex;
+  align-items: center;
+}
+.locationFooter img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+.booking {
+  display: flex;
+  font-size: 20px;
+}
+.booking span:first-child {
+  display: block;
+  margin-block: auto;
+  margin-right: 21px;
+}
+
+.phoneNums {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-decoration: underline;
+  padding-left: 20px;
+  border-left: 2px solid white;
+}
+
+.copyrights {
+  display: flex;
+  width: 150px;
+  align-items: center;
+}
+.copyrights img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+.refIcons {
+  display: flex;
+  gap: 30px;
+  margin-right: 60px;
+}
+.refIcons img:last-child {
+  width: 20px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 520px;
+  height: 543px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1; /* Делает слайд видимым */
+  z-index: 1;
+}
+
+.switch-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 520px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.rightArrow {
+  transform: rotate(180deg);
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Source Serif 4", "Inter", "system-ui", "Avenir", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */

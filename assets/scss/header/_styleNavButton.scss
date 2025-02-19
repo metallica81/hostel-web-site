@@ -7,6 +7,9 @@
 .header__nav-button {
     background-color: #fff;
     border: none;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 16px;
+    font-size: 14px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }

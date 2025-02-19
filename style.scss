@@ -12,9 +12,12 @@
 @import "./assets/scss/main/styleService";
 @import "./assets/scss/components/button";
 @import "./assets/scss/footer/footer";
+@import "./assets/scss/components/slider/slider";
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Source Serif 4", "Inter", "system-ui", "Avenir", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
