@@ -1,3 +1,16 @@
 // variables
 
 $backgroun-color: #2A254B;
+$background-button: #3B3A63;
+$font-orange: #EF7F04;
+$font-icon-size: 20px;
+
+%font-icon {
+    font: {
+        size: $font-icon-size;
+        family: 'Oswald', serif;
+        weight: bold;
+    }
+    //color: white;
+    text-transform: uppercase;
+}

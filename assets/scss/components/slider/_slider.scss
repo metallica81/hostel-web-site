@@ -8,6 +8,15 @@
     @include mixins.screen-respond(large-medium-screens) {
         width: 43%;
     }
+    @include mixins.screen-respond(medium-screens) {
+        width: 43%;
+    }
+    @include mixins.screen-respond(handhelds) {
+        width: 43%;
+    }
+    @include mixins.screen-respond(phones) {
+        width: 43%;
+    }
 }
 
 .slide {
@@ -42,6 +51,11 @@
         height: auto;
         aspect-ratio: 30/4;
     }
+    @include mixins.screen-respond(medium-screens) {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 30/4;
+    }
 }
 
 .rightArrow {
@@ -50,6 +64,9 @@
 
 .arrow {
     @include mixins.screen-respond(large-medium-screens) {
+        width: 10%;
+    }
+    @include mixins.screen-respond(medium-screens) {
         width: 10%;
     }
 }

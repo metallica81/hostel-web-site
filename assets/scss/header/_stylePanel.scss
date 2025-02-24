@@ -1,4 +1,5 @@
 @use '../mixins' as mixins;
+@use '../varibales' as variables;
 
 .panel {
     display: flex;
@@ -9,4 +10,75 @@
     @include mixins.screen-respond(large-medium-screens) {
         width: 90%;
     }
+    @include mixins.screen-respond(medium-screens) {
+        width: 90%;
+    }
+    @include mixins.screen-respond(handhelds) {
+        width: 90%;
+    }
+    @include mixins.screen-respond(phones) {
+        width: 90%;
+    }
+}
+
+.menu {
+    display: none;
+    @include mixins.screen-respond(phones) {
+        display: flex;
+    }
+    @include mixins.screen-respond(handhelds) {
+        display: flex;
+    }
+    @include mixins.screen-respond(medium-screens) {
+        display: flex;
+    }
+}
+
+.menu {
+    position: relative; /* Родительский контейнер для абсолютного позиционирования */
+    margin-left: auto;
+}
+
+.menu-list {
+    position: absolute;
+    top: 33px; /* Меню будет появляться ниже кнопки */
+    left: -172px; /* Меню появится слева */
+    background: variables.$background-button;
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0 0 0; /* Отступ вниз */
+    display: none;
+    width: 182px; /* Ширина меню (можно настроить) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для красивого эффекта */
+}
+
+/* Показываем меню при нажатии */
+.menu-visible {
+    display: block;
+}
+
+/* Стили ссылок */
+.menu-list a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu-list a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Анимация появления */
+.menu-list {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-visible {
+    opacity: 1;
+    transform: translateY(0);
 }

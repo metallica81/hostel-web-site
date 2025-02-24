@@ -8,6 +8,15 @@
         padding-top: 5px;
         gap: 20px;
     }
+    @include mixins.screen-respond(medium-screens) {
+        display: none;
+    }
+    @include mixins.screen-respond(handhelds) {
+        display: none;
+    }
+    @include mixins.screen-respond(phones) {
+        display: none;
+    }
 }
 
 .header__nav-button {

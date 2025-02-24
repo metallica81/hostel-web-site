@@ -6,7 +6,15 @@
     //height: 683px;
     color: white;
     padding-top: 140px;
-    
+    @include mixins.screen-respond(medium-screens) {
+        flex-direction: column;
+    }
+    @include mixins.screen-respond(handhelds) {
+        flex-direction: column;
+    }
+    @include mixins.screen-respond(phones) {
+        flex-direction: column;
+    }
 }
 
 .section-main__wrapper {
@@ -24,12 +32,46 @@
         }
         
     }
+    @include mixins.screen-respond(medium-screens) {
+        @media (max-width: 970px) {
+            width: 100%;
+            padding: 50px 70px 50px 60px;
+            gap: 20px;
+        }
+        
+    }
+    @include mixins.screen-respond(handhelds) {
+        @media (max-width: 970px) {
+            width: 100%;
+            padding: 50px 40px 50px 40px;
+            gap: 20px;
+        }
+        
+    }
+    @include mixins.screen-respond(phones) {
+        @media (max-width: 970px) {
+            width: 100%;
+            padding: 50px 40px 50px 40px;
+            gap: 20px;
+        }
+        
+    }
 }
 
 .section-main__p {
     font-size: 24px;
     font-weight: 400;
     @include mixins.screen-respond(large-medium-screens) {
+        @media (max-width: 970px) {
+            font-size: 20px;
+        }
+    }
+    @include mixins.screen-respond(handhelds) {
+        @media (max-width: 970px) {
+            font-size: 20px;
+        }
+    }
+    @include mixins.screen-respond(phones) {
         @media (max-width: 970px) {
             font-size: 20px;
         }
@@ -51,6 +93,15 @@
     width: 256px;
     margin-left: auto;
     @include mixins.screen-respond(large-medium-screens) {
+        display: none;
+    }
+    @include mixins.screen-respond(medium-screens) {
+        display: none;
+    }
+    @include mixins.screen-respond(handhelds) {
+        display: none;
+    }
+    @include mixins.screen-respond(phones) {
         display: none;
     }
 }

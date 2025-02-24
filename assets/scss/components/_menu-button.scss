@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.menu-toggle {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  left: -100px;
+  top: -25px;
+}
+
+.btn {
+  width: 110px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #2A254B;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #ffffff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #2A254B;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn:hover {
+    color: white;
+}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
 .spanLogo {
   font-family: "Oswald", serif;
   font-size: 32px;
@@ -25,6 +26,21 @@
     gap: 20px;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .nav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .nav {
+    display: none;
+  }
+}
 
 .header__nav-button {
   background-color: #fff;
@@ -47,6 +63,89 @@
   .panel {
     width: 90%;
   }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .panel {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .panel {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .panel {
+    width: 90%;
+  }
+}
+
+.menu {
+  display: none;
+}
+@media only screen and (max-width: 400px) {
+  .menu {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .menu {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .menu {
+    display: flex;
+  }
+}
+
+.menu {
+  position: relative; /* Родительский контейнер для абсолютного позиционирования */
+  margin-left: auto;
+}
+
+.menu-list {
+  position: absolute;
+  top: 33px; /* Меню будет появляться ниже кнопки */
+  left: -172px; /* Меню появится слева */
+  background: #3B3A63;
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0 0 0; /* Отступ вниз */
+  display: none;
+  width: 182px; /* Ширина меню (можно настроить) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для красивого эффекта */
+}
+
+/* Показываем меню при нажатии */
+.menu-visible {
+  display: block;
+}
+
+/* Стили ссылок */
+.menu-list a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.menu-list a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Анимация появления */
+.menu-list {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .adventageSection {
@@ -100,6 +199,21 @@
   color: white;
   padding-top: 140px;
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .section-main {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .section-main {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section-main {
+    flex-direction: column;
+  }
+}
 
 .section-main__wrapper {
   display: flex;
@@ -116,12 +230,43 @@
     gap: 20px;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) and (max-width: 970px) {
+  .section-main__wrapper {
+    width: 100%;
+    padding: 50px 70px 50px 60px;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) and (max-width: 970px) {
+  .section-main__wrapper {
+    width: 100%;
+    padding: 50px 40px 50px 40px;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 400px) and (max-width: 970px) {
+  .section-main__wrapper {
+    width: 100%;
+    padding: 50px 40px 50px 40px;
+    gap: 20px;
+  }
+}
 
 .section-main__p {
   font-size: 24px;
   font-weight: 400;
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 970px) {
+  .section-main__p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) and (max-width: 970px) {
+  .section-main__p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) and (max-width: 970px) {
   .section-main__p {
     font-size: 20px;
   }
@@ -143,6 +288,21 @@
   margin-left: auto;
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .buildingPng {
+    display: none;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .buildingPng {
+    display: none;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .buildingPng {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
   .buildingPng {
     display: none;
   }
@@ -202,6 +362,21 @@ section.room-section {
   .section {
     width: 90%;
     aspect-ratio: 16/10;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .section {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .section {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section {
+    width: 90%;
   }
 }
 
@@ -383,6 +558,21 @@ section.room-section {
     width: 43%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .slider {
+    width: 43%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .slider {
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .slider {
+    width: 43%;
+  }
+}
 
 .slide {
   position: absolute;
@@ -419,6 +609,13 @@ section.room-section {
     aspect-ratio: 30/4;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .switch-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 30/4;
+  }
+}
 
 .rightArrow {
   transform: rotate(180deg);
@@ -428,6 +625,59 @@ section.room-section {
   .arrow {
     width: 10%;
   }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .arrow {
+    width: 10%;
+  }
+}
+
+.menu-toggle {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  left: -100px;
+  top: -25px;
+}
+
+.btn {
+  width: 110px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #2A254B;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #ffffff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #2A254B;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn:hover {
+  color: white;
 }
 
 * {
