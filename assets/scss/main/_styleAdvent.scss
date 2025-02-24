@@ -1,5 +1,6 @@
+@use '../mixins' as mixins;
+
 .adventageSection {
-    width: 1200px;
     height: 355px;
     margin-inline: auto;
     font-family: "Source Serif 4", serif;
@@ -9,6 +10,9 @@
 .wrapperAdventage {
     display: flex;
     gap: 160px;
+    @include mixins.screen-respond(large-medium-screens) {
+        gap: 13%;
+    }
 }
 
 .card {

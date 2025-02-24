@@ -1,3 +1,5 @@
+@use '../mixins' as mixins;
+
 .button {
     height: 56px;
     border: none;
@@ -8,4 +10,7 @@
     color: black;
     width: 281px;
     cursor: pointer;
+    @include mixins.screen-respond(large-medium-screens) {
+        width: 100%;
+    }
 }

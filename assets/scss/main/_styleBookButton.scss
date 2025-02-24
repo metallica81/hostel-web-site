@@ -1,3 +1,5 @@
+@use '../mixins' as mixins;
+
 .button-book {
     width: 170px;
     height: 56px;
@@ -8,4 +10,10 @@
     background-color: rgba(249, 249, 249, 0.15);
     color: white;
     cursor: pointer;
+    @include mixins.screen-respond(large-medium-screens) {
+        
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
 }

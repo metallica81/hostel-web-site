@@ -1,8 +1,13 @@
+@use '../../mixins' as mixins;
+
 .slider {
     position: relative;
     overflow: hidden;
-    width: 520px;
-    height: 543px;
+    width: 43%;
+    //height: 543px;
+    @include mixins.screen-respond(large-medium-screens) {
+        width: 43%;
+    }
 }
 
 .slide {
@@ -13,7 +18,7 @@
     height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    //object-fit: cover; /* Масштабирование, чтобы картинки не сжимались */
+    object-fit: cover; /* Масштабирование, чтобы картинки не сжимались */
 }
 
 .slide.active {
@@ -32,8 +37,19 @@
     width: 520px;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.65);
+    @include mixins.screen-respond(large-medium-screens) {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 30/4;
+    }
 }
 
 .rightArrow {
     transform: rotate(180deg);
+}
+
+.arrow {
+    @include mixins.screen-respond(large-medium-screens) {
+        width: 10%;
+    }
 }

@@ -1,8 +1,9 @@
-.wrapper {
-    
-}
+@use '../mixins' as mixins;
 
 .serv-card {
     justify-content: space-between;
     height: 630px;
+    @include mixins.screen-respond(large-medium-screens) {
+        width: 30%;
+    }
 }

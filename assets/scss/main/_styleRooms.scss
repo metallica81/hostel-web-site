@@ -1,18 +1,29 @@
 @use '../varibales' as variables;
+@use '../mixins' as mixins;
 
 section.room-section {
     height: 677px;
     width: 100%;
     background-color: variables.$backgroun-color;
+    @include mixins.screen-respond(large-medium-screens) {
+        aspect-ratio: 16/10;
+        height: auto;
+    }
 }
 
 .wrapper {
-    width: 1200px;
+    //width: 1200px;
     margin-inline: auto;
     display: flex;
     gap: 160px;
     img {
         width: 281px;
+        @include mixins.screen-respond(large-medium-screens) {
+            width: 100%;
+        }
+    }
+    @include mixins.screen-respond(large-medium-screens) {
+        gap: 10%;
     }
 }
 
@@ -23,4 +34,8 @@ section.room-section {
     }
     width: 1200px;
     margin-inline: auto;
+    @include mixins.screen-respond(large-medium-screens) {
+        width: 90%;
+        
+    }
 }

@@ -1,6 +1,20 @@
+@use '../mixins' as mixins;
+
 .h2 {
     text-align: center;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 70px;
+    @include mixins.screen-respond(large-medium-screens) {
+        margin-bottom: 5%;
+    }
+    @include mixins.screen-respond(medium-screens) {
+        margin-bottom: 5%;
+    }
+    @include mixins.screen-respond(handhelds) {
+        margin-bottom: 5%;
+    }
+    @include mixins.screen-respond(phones) {
+        margin-bottom: 5%;
+    }
 }

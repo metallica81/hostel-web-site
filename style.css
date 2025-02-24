@@ -45,12 +45,11 @@
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .panel {
-    width: 700px;
+    width: 90%;
   }
 }
 
 .adventageSection {
-  width: 1200px;
   height: 355px;
   margin-inline: auto;
   font-family: "Source Serif 4", serif;
@@ -60,6 +59,11 @@
 .wrapperAdventage {
   display: flex;
   gap: 160px;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .wrapperAdventage {
+    gap: 13%;
+  }
 }
 
 .card {
@@ -85,10 +89,14 @@
   color: white;
   cursor: pointer;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 1024px) {
+  .button-book {
+    display: none;
+  }
+}
 
 .section-main {
   display: flex;
-  height: 683px;
   color: white;
   padding-top: 140px;
 }
@@ -101,15 +109,32 @@
   padding: 50px 70px 0 60px;
   background-color: #2A254B;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 970px) {
+  .section-main__wrapper {
+    width: 57%;
+    padding: 25px 20px 0 20px;
+    gap: 20px;
+  }
+}
 
 .section-main__p {
   font-size: 24px;
   font-weight: 400;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 970px) {
+  .section-main__p {
+    font-size: 20px;
+  }
+}
 
 .section-main__p-cooperation {
   font-size: 20px;
   font-weight: 300;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 970px) {
+  .section-main__p-cooperation {
+    font-size: 16px;
+  }
 }
 
 .buildingPng {
@@ -117,21 +142,41 @@
   width: 256px;
   margin-left: auto;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .buildingPng {
+    display: none;
+  }
+}
 
 section.room-section {
   height: 677px;
   width: 100%;
   background-color: #2A254B;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  section.room-section {
+    aspect-ratio: 16/10;
+    height: auto;
+  }
+}
 
 .wrapper {
-  width: 1200px;
   margin-inline: auto;
   display: flex;
   gap: 160px;
 }
 .wrapper img {
   width: 281px;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .wrapper img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .wrapper {
+    gap: 10%;
+  }
 }
 
 .room-container {
@@ -142,11 +187,22 @@ section.room-section {
 .room-container h2 {
   padding-block: 20px;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .room-container {
+    width: 90%;
+  }
+}
 
 .section {
   margin-inline: auto;
   margin-bottom: 60px;
   width: 1200px;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .section {
+    width: 90%;
+    aspect-ratio: 16/10;
+  }
 }
 
 .h2 {
@@ -155,10 +211,35 @@ section.room-section {
   font-weight: 400;
   margin-bottom: 70px;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .h2 {
+    margin-bottom: 5%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .h2 {
+    margin-bottom: 5%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .h2 {
+    margin-bottom: 5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .h2 {
+    margin-bottom: 5%;
+  }
+}
 
 .serv-card {
   justify-content: space-between;
   height: 630px;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .serv-card {
+    width: 30%;
+  }
 }
 
 .button {
@@ -171,6 +252,11 @@ section.room-section {
   color: black;
   width: 281px;
   cursor: pointer;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .button {
+    width: 100%;
+  }
 }
 
 #map {
@@ -193,6 +279,11 @@ section.room-section {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .footer-container {
+    width: 90%;
+  }
 }
 
 .upperWrapper {
@@ -225,6 +316,14 @@ section.room-section {
   margin-block: auto;
   margin-right: 21px;
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 900px) {
+  .booking {
+    font-size: 16px;
+  }
+  .booking span:first-child {
+    margin-right: 11px;
+  }
+}
 
 .phoneNums {
   display: flex;
@@ -233,6 +332,26 @@ section.room-section {
   text-decoration: underline;
   padding-left: 20px;
   border-left: 2px solid white;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 900px) {
+  .phoneNums {
+    padding-left: 11px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) and (max-width: 900px) {
+  .phoneNums {
+    padding-left: 11px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) and (max-width: 900px) {
+  .phoneNums {
+    padding-left: 11px;
+  }
+}
+@media only screen and (max-width: 400px) and (max-width: 900px) {
+  .phoneNums {
+    padding-left: 11px;
+  }
 }
 
 .copyrights {
@@ -257,8 +376,12 @@ section.room-section {
 .slider {
   position: relative;
   overflow: hidden;
-  width: 520px;
-  height: 543px;
+  width: 43%;
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .slider {
+    width: 43%;
+  }
 }
 
 .slide {
@@ -269,6 +392,7 @@ section.room-section {
   height: 100%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  object-fit: cover; /* Масштабирование, чтобы картинки не сжимались */
 }
 
 .slide.active {
@@ -288,9 +412,22 @@ section.room-section {
   height: 70px;
   background-color: rgba(0, 0, 0, 0.65);
 }
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .switch-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 30/4;
+  }
+}
 
 .rightArrow {
   transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 757px) and (max-width: 1299px) {
+  .arrow {
+    width: 10%;
+  }
 }
 
 * {

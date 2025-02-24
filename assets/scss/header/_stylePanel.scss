@@ -7,6 +7,6 @@
     margin-inline: auto;
     align-items: center;
     @include mixins.screen-respond(large-medium-screens) {
-        width: 700px;
+        width: 90%;
     }
 }

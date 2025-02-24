@@ -1,10 +1,12 @@
+@use '../mixins' as mixins;
 @use '../varibales' as variables;
 
 .section-main{
     display: flex;
-    height: 683px;
+    //height: 683px;
     color: white;
     padding-top: 140px;
+    
 }
 
 .section-main__wrapper {
@@ -14,20 +16,41 @@
     width: 724px;
     padding: 50px 70px 0 60px;
     background-color: variables.$backgroun-color;
+    @include mixins.screen-respond(large-medium-screens) {
+        @media (max-width: 970px) {
+            width: 57%;
+            padding: 25px 20px 0 20px;
+            gap: 20px;
+        }
+        
+    }
 }
 
 .section-main__p {
     font-size: 24px;
     font-weight: 400;
+    @include mixins.screen-respond(large-medium-screens) {
+        @media (max-width: 970px) {
+            font-size: 20px;
+        }
+    }
 }
 
 .section-main__p-cooperation {
     font-size: 20px;
     font-weight: 300;
+    @include mixins.screen-respond(large-medium-screens) {
+        @media (max-width: 970px) {
+            font-size: 16px;
+        }
+    }
 }
 
 .buildingPng {
     overflow: hidden;
     width: 256px;
     margin-left: auto;
+    @include mixins.screen-respond(large-medium-screens) {
+        display: none;
+    }
 }
