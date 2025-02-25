@@ -58,8 +58,11 @@
 .lowerWrapper {
     display: flex;
     justify-content: space-between;
-
-}
+    @include mixins.screen-respond(phones) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}   
 
 .locationFooter {
     display: flex;
@@ -174,5 +177,11 @@
     margin-right: 60px;
     img:last-child {
         width: 20px;
+    }
+    @include mixins.screen-respond(handhelds) {
+        margin-right: 0;
+    }
+    @include mixins.screen-respond(phones) {
+        margin-right: 0;
     }
 }

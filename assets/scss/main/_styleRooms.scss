@@ -47,10 +47,12 @@ section.room-section {
     @include mixins.screen-respond(handhelds) {
         gap: 60px;
         flex-direction: column;
+        margin-inline: auto;
     }
     @include mixins.screen-respond(phones) {
         gap: 60px;
         flex-direction: column;
+        margin-inline: auto;
     }
 }
 
@@ -71,9 +73,11 @@ section.room-section {
     @include mixins.screen-respond(handhelds) {
         width: 90%; 
         padding-bottom: 50px;
+        margin-inline: auto;
     }
     @include mixins.screen-respond(phones) {
         width: 90%; 
         padding-bottom: 50px;
+        margin-inline: auto;
     }
 }

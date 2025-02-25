@@ -194,22 +194,22 @@
   .wrapperAdventage {
     flex-direction: column;
     gap: 60px;
-    width: 50%;
+    width: 70%;
     margin-inline: auto;
   }
   .wrapperAdventage .card {
-    width: 70%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 400px) {
   .wrapperAdventage {
     flex-direction: column;
     gap: 60px;
-    width: 50%;
+    width: 70%;
     margin-inline: auto;
   }
   .wrapperAdventage .card {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -226,19 +226,21 @@
 }
 @media only screen and (min-width: 601px) and (max-width: 756px) {
   .card {
-    width: 50%;
+    width: 281px;
     margin-inline: auto;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 600px) {
   .card {
-    width: 50%;
+    width: 281px;
+    margin-inline: auto;
     margin-inline: auto;
   }
 }
 @media only screen and (max-width: 400px) {
   .card {
-    width: 50%;
+    width: 281px;
+    margin-inline: auto;
     margin-inline: auto;
   }
 }
@@ -334,7 +336,7 @@
 }
 @media only screen and (max-width: 400px) and (max-width: 970px) {
   .section-main__p {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -345,6 +347,16 @@
 @media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 970px) {
   .section-main__p-cooperation {
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 970px) {
+  .section-main__p-cooperation {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section-main__p-cooperation {
+    font-size: 15px;
   }
 }
 
@@ -432,12 +444,14 @@ section.room-section {
   .wrapper {
     gap: 60px;
     flex-direction: column;
+    margin-inline: auto;
   }
 }
 @media only screen and (max-width: 400px) {
   .wrapper {
     gap: 60px;
     flex-direction: column;
+    margin-inline: auto;
   }
 }
 
@@ -464,12 +478,14 @@ section.room-section {
   .room-container {
     width: 90%;
     padding-bottom: 50px;
+    margin-inline: auto;
   }
 }
 @media only screen and (max-width: 400px) {
   .room-container {
     width: 90%;
     padding-bottom: 50px;
+    margin-inline: auto;
   }
 }
 
@@ -538,17 +554,17 @@ section.room-section {
 }
 @media only screen and (min-width: 601px) and (max-width: 756px) {
   .serv-card {
-    height: 610px;
+    height: auto;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 600px) {
   .serv-card {
-    height: 610px;
+    height: auto;
   }
 }
 @media only screen and (max-width: 400px) {
   .serv-card {
-    height: 610px;
+    height: auto;
   }
 }
 
@@ -639,6 +655,12 @@ section.room-section {
 .lowerWrapper {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 400px) {
+  .lowerWrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .locationFooter {
@@ -749,6 +771,16 @@ section.room-section {
 }
 .refIcons img:last-child {
   width: 20px;
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .refIcons {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .refIcons {
+    margin-right: 0;
+  }
 }
 
 .slider {

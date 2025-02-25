@@ -34,19 +34,19 @@
     @include mixins.screen-respond(handhelds) {
         flex-direction: column;
         gap: 60px;
-        width: 50%;
+        width: 70%;
         margin-inline: auto;
         .card {
-            width: 70%;
+            width: 100%;
         }
     }
     @include mixins.screen-respond(phones) {
         flex-direction: column;
         gap: 60px;
-        width: 50%;
+        width: 70%;
         margin-inline: auto;
         .card {
-            width: 70%;
+            width: 100%;
         }
     }
 }
@@ -64,15 +64,17 @@
         width: 40px;
     }
     @include mixins.screen-respond(medium-screens) {
-        width: 50%;
+        width: 281px;
         margin-inline: auto;
     }
     @include mixins.screen-respond(handhelds) {
-        width: 50%;
+        width: 281px;
+        margin-inline: auto;
         margin-inline: auto;
     }
     @include mixins.screen-respond(phones) {
-        width: 50%;
+        width: 281px;
+        margin-inline: auto;
         margin-inline: auto;
     }
 }

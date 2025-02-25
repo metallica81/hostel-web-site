@@ -7,12 +7,12 @@
         width: 30%;
     }
     @include mixins.screen-respond(medium-screens) {
-        height: 610px;
+        height: auto;
     }
     @include mixins.screen-respond(handhelds) {
-        height: 610px;
+        height: auto;
     }
     @include mixins.screen-respond(phones) {
-        height: 610px;
+        height: auto;
     }
 }

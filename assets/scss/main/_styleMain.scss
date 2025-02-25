@@ -73,7 +73,7 @@
     }
     @include mixins.screen-respond(phones) {
         @media (max-width: 970px) {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 }
@@ -85,6 +85,14 @@
         @media (max-width: 970px) {
             font-size: 16px;
         }
+    }
+    @include mixins.screen-respond(large-medium-screens) {
+        @media (max-width: 970px) {
+            font-size: 16px;
+        }
+    }
+    @include mixins.screen-respond(phones) {
+        font-size: 15px;
     }
 }
 
