@@ -154,6 +154,21 @@
   font-family: "Source Serif 4", serif;
   margin-bottom: 60px;
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .adventageSection {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .adventageSection {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .adventageSection {
+    height: auto;
+  }
+}
 
 .wrapperAdventage {
   display: flex;
@@ -162,6 +177,39 @@
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .wrapperAdventage {
     gap: 13%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .wrapperAdventage {
+    flex-direction: column;
+    gap: 60px;
+    width: 50%;
+    margin-inline: auto;
+  }
+  .wrapperAdventage .card {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .wrapperAdventage {
+    flex-direction: column;
+    gap: 60px;
+    width: 50%;
+    margin-inline: auto;
+  }
+  .wrapperAdventage .card {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .wrapperAdventage {
+    flex-direction: column;
+    gap: 60px;
+    width: 50%;
+    margin-inline: auto;
+  }
+  .wrapperAdventage .card {
+    width: 70%;
   }
 }
 
@@ -175,6 +223,24 @@
 }
 .card img {
   width: 40px;
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .card {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .card {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 50%;
+    margin-inline: auto;
+  }
 }
 
 .button-book {
@@ -319,6 +385,24 @@ section.room-section {
     height: auto;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  section.room-section {
+    aspect-ratio: 16/10;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  section.room-section {
+    aspect-ratio: 16/10;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  section.room-section {
+    aspect-ratio: 16/10;
+    height: auto;
+  }
+}
 
 .wrapper {
   margin-inline: auto;
@@ -338,6 +422,24 @@ section.room-section {
     gap: 10%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .wrapper {
+    gap: 60px;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .wrapper {
+    gap: 60px;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    gap: 60px;
+    flex-direction: column;
+  }
+}
 
 .room-container {
   color: white;
@@ -350,6 +452,24 @@ section.room-section {
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .room-container {
     width: 90%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .room-container {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .room-container {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .room-container {
+    width: 90%;
+    padding-bottom: 50px;
   }
 }
 
@@ -416,6 +536,21 @@ section.room-section {
     width: 30%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .serv-card {
+    height: 610px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .serv-card {
+    height: 610px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .serv-card {
+    height: 610px;
+  }
+}
 
 .button {
   height: 56px;
@@ -460,12 +595,45 @@ section.room-section {
     width: 90%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .footer-container {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .footer-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer-container {
+    width: 90%;
+  }
+}
 
 .upperWrapper {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #4E4D93;
   padding: 15px;
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .upperWrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .upperWrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .upperWrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
 
 .lowerWrapper {
@@ -497,6 +665,41 @@ section.room-section {
   }
   .booking span:first-child {
     margin-right: 11px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 756px) {
+  .booking {
+    font-size: 16px;
+  }
+  .booking span:first-child {
+    margin-right: 11px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .booking {
+    font-size: 16px;
+  }
+  .booking span:first-child {
+    margin-right: 11px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .booking {
+    font-size: 16px;
+  }
+  .booking span:first-child {
+    margin-right: 11px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .booking > span {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .booking > span {
+    display: none !important;
   }
 }
 
@@ -560,17 +763,23 @@ section.room-section {
 }
 @media only screen and (min-width: 601px) and (max-width: 756px) {
   .slider {
-    width: 43%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 600px) {
   .slider {
-    width: 43%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
   }
 }
 @media only screen and (max-width: 400px) {
   .slider {
-    width: 43%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
   }
 }
 
@@ -616,6 +825,20 @@ section.room-section {
     aspect-ratio: 30/4;
   }
 }
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .switch-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 30/4;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .switch-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 30/4;
+  }
+}
 
 .rightArrow {
   transform: rotate(180deg);
@@ -627,6 +850,16 @@ section.room-section {
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 756px) {
+  .arrow {
+    width: 10%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .arrow {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 400px) {
   .arrow {
     width: 10%;
   }

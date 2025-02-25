@@ -9,6 +9,18 @@ section.room-section {
         aspect-ratio: 16/10;
         height: auto;
     }
+    @include mixins.screen-respond(medium-screens) {
+        aspect-ratio: 16/10;
+        height: auto;
+    }
+    @include mixins.screen-respond(handhelds) {
+        aspect-ratio: 16/10;
+        height: auto;
+    }
+    @include mixins.screen-respond(phones) {
+        aspect-ratio: 16/10;
+        height: auto;
+    }
 }
 
 .wrapper {
@@ -21,9 +33,24 @@ section.room-section {
         @include mixins.screen-respond(large-medium-screens) {
             width: 100%;
         }
+        @include mixins.screen-respond(medium-screens) {
+            //width: 50%;
+        }
     }
     @include mixins.screen-respond(large-medium-screens) {
         gap: 10%;
+    }
+    @include mixins.screen-respond(medium-screens) {
+        gap: 60px;
+        flex-direction: column;
+    }
+    @include mixins.screen-respond(handhelds) {
+        gap: 60px;
+        flex-direction: column;
+    }
+    @include mixins.screen-respond(phones) {
+        gap: 60px;
+        flex-direction: column;
     }
 }
 
@@ -35,7 +62,18 @@ section.room-section {
     width: 1200px;
     margin-inline: auto;
     @include mixins.screen-respond(large-medium-screens) {
-        width: 90%;
-        
+        width: 90%; 
+    }
+    @include mixins.screen-respond(medium-screens) {
+        width: 90%; 
+        padding-bottom: 50px;
+    }
+    @include mixins.screen-respond(handhelds) {
+        width: 90%; 
+        padding-bottom: 50px;
+    }
+    @include mixins.screen-respond(phones) {
+        width: 90%; 
+        padding-bottom: 50px;
     }
 }

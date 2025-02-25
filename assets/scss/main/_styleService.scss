@@ -6,4 +6,13 @@
     @include mixins.screen-respond(large-medium-screens) {
         width: 30%;
     }
+    @include mixins.screen-respond(medium-screens) {
+        height: 610px;
+    }
+    @include mixins.screen-respond(handhelds) {
+        height: 610px;
+    }
+    @include mixins.screen-respond(phones) {
+        height: 610px;
+    }
 }

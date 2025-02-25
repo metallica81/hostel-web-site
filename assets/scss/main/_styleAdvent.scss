@@ -5,6 +5,15 @@
     margin-inline: auto;
     font-family: "Source Serif 4", serif;
     margin-bottom: 60px;
+    @include mixins.screen-respond(medium-screens) {
+        height: auto;
+    }
+    @include mixins.screen-respond(handhelds) {
+        height: auto;
+    }
+    @include mixins.screen-respond(phones) {
+        height: auto;
+    }
 }
 
 .wrapperAdventage {
@@ -12,6 +21,33 @@
     gap: 160px;
     @include mixins.screen-respond(large-medium-screens) {
         gap: 13%;
+    }
+    @include mixins.screen-respond(medium-screens) {
+        flex-direction: column;
+        gap: 60px;
+        width: 50%;
+        margin-inline: auto;
+        .card {
+            width: 70%;
+        }
+    }
+    @include mixins.screen-respond(handhelds) {
+        flex-direction: column;
+        gap: 60px;
+        width: 50%;
+        margin-inline: auto;
+        .card {
+            width: 70%;
+        }
+    }
+    @include mixins.screen-respond(phones) {
+        flex-direction: column;
+        gap: 60px;
+        width: 50%;
+        margin-inline: auto;
+        .card {
+            width: 70%;
+        }
     }
 }
 
@@ -26,5 +62,17 @@
 
     img {
         width: 40px;
+    }
+    @include mixins.screen-respond(medium-screens) {
+        width: 50%;
+        margin-inline: auto;
+    }
+    @include mixins.screen-respond(handhelds) {
+        width: 50%;
+        margin-inline: auto;
+    }
+    @include mixins.screen-respond(phones) {
+        width: 50%;
+        margin-inline: auto;
     }
 }

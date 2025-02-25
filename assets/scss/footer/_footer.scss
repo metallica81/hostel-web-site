@@ -25,6 +25,15 @@
     @include mixins.screen-respond(large-medium-screens) {
         width: 90%;
     }
+    @include mixins.screen-respond(medium-screens) {
+        width: 90%;
+    }
+    @include mixins.screen-respond(handhelds) {
+        width: 90%;
+    }
+    @include mixins.screen-respond(phones) {
+        width: 90%;
+    }
 }
 
 .upperWrapper {
@@ -32,6 +41,18 @@
     justify-content: space-between;
     border-bottom: 1px solid #4E4D93;
     padding:  15px;
+    @include mixins.screen-respond(medium-screens) {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    @include mixins.screen-respond(handhelds) {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    @include mixins.screen-respond(phones) {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
 }
 
 .lowerWrapper {
@@ -64,6 +85,39 @@
                 margin-right: 11px;
             }
         }
+    }
+    @include mixins.screen-respond(medium-screens) {
+
+        font-size: 16px;
+        span:first-child {
+            margin-right: 11px;
+        }
+        
+    }
+    @include mixins.screen-respond(handhelds) {
+
+        font-size: 16px;
+        span:first-child {
+            margin-right: 11px;
+        }
+        
+    }
+    @include mixins.screen-respond(phones) {
+
+        font-size: 16px;
+        span:first-child {
+            margin-right: 11px;
+        }
+
+    }
+}
+
+.booking > span {
+    @include mixins.screen-respond(handhelds) {
+        display: none !important;
+    }
+    @include mixins.screen-respond(phones) {
+        display: none !important;
     }
 }
 
