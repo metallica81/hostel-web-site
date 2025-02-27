@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../docs/iconHostel.ico" />
     <link rel="stylesheet" href="../docs/style.css">
+    <link rel="stylesheet" href="style-sauna.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +26,7 @@
     <header class="header">
         <div class="panel">
             <div class="logo">
-                <span class='spanLogo'>Высотк</span>
-                <img src="../docs/assets/scss/components/logo.svg" alt='logo'/>
+                <span class='spanLogo'>Б<img src="../docs/assets/scss/components/logo.svg" class="logo__letter-A" alt='logo'/>ня</span>
             </div>
             <nav class="nav">
                 <button class="header__nav-button"><a href="#main">Главная</a></button>
@@ -90,71 +90,30 @@
                 </div>
             </div>
         </section>
-        <section class="section adventageSection" id="adventages">
-                <h2 class="h2">Наши преимущества</h2>
-                <div class="wrapperAdventage">
-                    <div class="card">
-                        <img src="assets/scss/assets/price.svg" alt="">
-                        <h3>Доступные цены</h3>
-                        <p>Цены за аренду наших номеров существенно ниже, чем средние по рынку</p>
-                    </div>
-                    <div class="card">
-                        <img src="assets/scss/assets/location.svg" alt="">
-                        <h3>Удобное местоположения</h3>
-                        <p>Мы находимся рядом в шаговой доступности от вокзала</p>
-                    </div>
-                    <div class="card">
-                        <img src="assets/scss/assets/choice.svg" alt="">
-                        <h3>Широкий выбор услуг</h3>
-                        <p>Вместе с гостиницей в здании есть столовая, тренажёрный зал и баня</p>
+    
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="h2">Дополнительные услуги</h2>
+                <div class="wrapper">
+                    <div class="card serv-card">
+                        <h3 class="h3">Хостел</h3>
+                        <p>В эконом-столовой подают сытные обеды: первое, второе, свежие салаты и домашнюю выпечку по доступным ценам.</p>
+                        <img src="../docs/assets/photo/hostel/entering.png" alt="cafe">
+                        <a href="../docs/index.html"><button class="button">Подробнее</button></div></a>
+                    <div class="card serv-card">
+                        <h3 class="h3">Спортивный комплекс</h3>
+                        <p>У нас есть тренажёрный зал, настольный теннис, футбольное поле, волейбольное поле и большой теннис со снаряжением для каждого вида спорта</p>
+                        <img src="../docs/assets/photo/gym/gym2.jpg" alt="gym">
+                        <a href="../gym/index.html"><button class="button">Подробнее</button></div></a>
+                    <div class="card serv-card">
+                        <h3 class="h3">Баня</h3>
+                        <p>Присутствует баня с купелью за 1800 рублей в час.</p>
+                        <img src="../docs/assets/photo/sauna/sauna_photo10.jpg" alt="sauna">
+                        <a href="../gym/index.html"><button class="button">Подробнее</button></div></a>
                     </div>
                 </div>
-            </section>
-    
-            <section class="section room-section" id="rooms">
-                <div class="room-container">
-                    <h2 class="h2">Номера</h2>
-    
-                    <div class="wrapper">
-                        <div class="card">
-                            <img src="../docs/assets/scss/assets/place4.png" alt="4-places room">
-                            <span>4-х местный номер</span>
-                            <span>800руб/сутки</span>
-                        </div>
-                        <div class="card">
-                            <img src="../docs/assets/scss/assets/place6.png" alt="6-places room">
-                            <span>6-и местный номер</span>
-                            <span>800руб/сутки</span>
-                        </div>
-                        <div class="card">
-                            <img src="../docs/assets/scss/assets/place8.png" alt="8-places room">
-                            <span>8-и местный номер</span>
-                            <span>800руб/сутки</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="section" id="services">
-                <div class="container">
-                    <h2 class="h2">Дополнительные услуги</h2>
-                    <div class="wrapper">
-                        <div class="card serv-card">
-                            <h3 class="h3">Кафе</h3>
-                            <p>В эконом-столовой подают сытные обеды: первое, второе, свежие салаты и домашнюю выпечку по доступным ценам.</p>
-                            <img src="../docs/assets/scss/assets/cafe1.jpg" alt="cafe"><button class="button">Подробнее</button></div>
-                        <div class="card serv-card">
-                            <h3 class="h3">Спортивный комплекс</h3>
-                            <p>У нас есть тренажёрный зал, настольный теннис, футбольное поле, волейбольное поле и большой теннис со снаряжением для каждого вида спорта</p>
-                            <img src="../docs/assets/photo/gym/gym2.jpg" alt="gym"><button class="button">Подробнее</button></div>
-                        <div class="card serv-card">
-                            <h3 class="h3">Баня</h3>
-                            <p>Присутствует баня с купелью за 1800 рублей в час.</p>
-                            <img src="../docs/assets/photo/sauna/sauna_photo10.jpg" alt="sauna"><button class="button">Подробнее</button></div>
-                        </div>
-                    </div>
-                    
-            </section>
+                
+        </section>
     </main>
 
     <footer class="footer" id="location">
