@@ -1,0 +1,11 @@
+@media (max-width: 400px) {
+    .sportLogo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sportLogo img{
+        width: 20px;
+    }
+}
