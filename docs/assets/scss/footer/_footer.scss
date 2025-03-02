@@ -83,6 +83,9 @@
         margin-right: 10px;
     }
     align-items: center;
+    address {
+        font-style: normal;
+    }
 }
 
 .booking {
@@ -143,6 +146,10 @@
     text-decoration: underline;
     padding-left: 20px;
     border-left: 2px solid white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
     @include mixins.screen-respond(large-medium-screens) {
         @media (max-width: 900px) {
             

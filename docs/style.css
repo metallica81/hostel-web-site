@@ -691,6 +691,9 @@ section.room-section {
   width: 22px;
   margin-right: 10px;
 }
+.locationFooter address {
+  font-style: normal;
+}
 
 .booking {
   display: flex;
@@ -752,6 +755,10 @@ section.room-section {
   text-decoration: underline;
   padding-left: 20px;
   border-left: 2px solid white;
+}
+.phoneNums a {
+  text-decoration: none;
+  color: white;
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) and (max-width: 900px) {
   .phoneNums {
