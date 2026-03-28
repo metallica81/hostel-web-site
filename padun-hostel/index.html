@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../docs/style.css">
+    <link rel="stylesheet" href="padunStyle.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
 
     <!-- Menu -->
      <script src="../docs/assets/scss/header/header.js"></script>
-    
+
     <!-- Map -->
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script src="../docs/assets/scss/footer/initMap.js" defer></script>
@@ -25,8 +26,7 @@
     <header class="header">
         <div class="panel">
             <div class="logo">
-                <span class='spanLogo'>Пюрешк</span>
-                <img src="../docs/assets/scss/components/logo.svg" alt='logo'/>
+                <span class='spanLogo'>П<img src="../docs/assets/scss/components/logo.svg" class="logo__letter-A" alt='logo'/>дун</span>
             </div>
             <nav class="nav">
                 <button class="header__nav-button"><a href="#main">Главная</a></button>
@@ -34,8 +34,7 @@
                 <button class="header__nav-button"><a href="#book">Бронировать</a></button>
             </nav>
             <nav class="menu">
-                <!-- <button class="menu-toggle">Меню</button> -->
-                
+
                 <div class="menu-toggle">
                     <button class="btn">
                         <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
@@ -45,7 +44,7 @@
                         <span class="menu-button_span">МЕНЮ</span>
                     </button>
                 </div>
-                  
+
                 <ul class="menu-list">
                   <li><a href="#main">Главная</a></li>
                   <li><a href="#location">Местопололжение</a></li>
@@ -58,56 +57,61 @@
         <section class="section section-main" id="main">
             <div class="section-main__wrapper">
                 <p class="section-main__p">
-                    Кафе "Пюрешка" — это место, где вы можете насладиться вкусной домашней едой, приготовленной с любовью. Мы предлагаем широкий выбор блюд, от классического пюре с котлетой до вкусной выпечки. Приходите к нам, чтобы почувствовать себя как дома!
+                    Хостел "Падун" — это уютный и доступный хостел в районе Падун города Братска. Комфортные номера, домашняя атмосфера и всё необходимое для приятного проживания.
                 </p>
-                <p class="section-main__p-cooperation">
-                    Активно сотрудничаем с крупными организациями, обеспечивая выгодное питание в столовой.
-                </p>
+                <a href="#book"><button class="button-book">
+                    Бронировать
+                </button></a>
                 <img src="../docs/assets/scss/components/bigLogo.svg" alt="" class='buildingPng'/>
             </div>
-            
+
             <div class="slider">
-                
-                <img src="../docs/assets/scss/header/entering.png" alt="фото входа" class='slide active'/>
-                <img src="../docs/assets/photo/cafe/cafe1.jpg" alt="кафе" class='slide' />
-                <img src="../docs/assets/photo/cafe/cafe2.jpg" alt="кафе" class='slide' />
-                <img src="../docs/assets/photo/cafe/corp.jpg" alt="столовая для корпоративных клиентов" class='slide' />
-                
+
+                <img src="padun1.jpg" alt="хостел Падун" class='slide active'/>
+                <img src="padun2.jpg" alt="хостел Падун" class='slide' />
+                <img src="padun3.jpg" alt="хостел Падун" class='slide' />
+                <img src="padun4.jpg" alt="хостел Падун" class='slide' />
+                <img src="padun5.jpg" alt="хостел Падун" class='slide' />
+                <img src="padun6.jpg" alt="хостел Падун" class='slide' />
+
                 <div class="switch-wrapper">
                     <img src="../docs/assets/scss/assets/leftArrow.svg" alt="left arrow" class='arrow leftArrow'/>
                     <img src="../docs/assets/scss/assets/leftArrow.svg" alt="right arrow" class='arrow rightArrow'/>
                 </div>
             </div>
         </section>
-    
-            <section class="section" id="services">
-                <div class="container">
-                    <h2 class="h2">Дополнительные услуги</h2>
-                    <div class="wrapper">
-                        <div class="card serv-card">
-                            <h3 class="h3">Хостел</h3>
-                            <p>Хостел "Высотка" — это бюджетный хостел, расположенный рядом с вокзалом.</p>
-                            <img src="../docs/assets/photo/hostel/entering.png" alt="cafe">
-                            <a href="../index.html"><button class="button">Подробнее</button></div></a>
-                        <div class="card serv-card">
-                            <h3 class="h3">Спортивный комплекс</h3>
-                            <p>У нас есть тренажёрный зал, настольный теннис, футбольное поле, волейбольное поле и большой теннис со снаряжением для каждого вида спорта</p>
-                            <img src="../docs/assets/photo/gym/gym2.jpg" alt="gym">
-                            <a href="../gym/index.html"><button class="button">Подробнее</button></div></a>
-                        <div class="card serv-card">
-                            <h3 class="h3">Баня</h3>
-                            <p>Присутствует баня с купелью за 1800 рублей в час.</p>
-                            <img src="../docs/assets/photo/sauna/sauna_photo10.jpg" alt="sauna">
-                            <a href="../sauna/index.html"><button class="button">Подробнее</button></div></a>
-                        <div class="card serv-card">
-                            <h3 class="h3">Хостел Падун</h3>
-                            <p>Хостел "Падун" — уютный и доступный хостел в районе Падун города Братска.</p>
-                            <img src="../padun-hostel/padun1.jpg" alt="hostel padun">
-                            <a href="../padun-hostel/index.html"><button class="button">Подробнее</button></div></a>
-                        </div>
+
+
+
+
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="h2">Дополнительные услуги</h2>
+                <div class="wrapper">
+                    <div class="card serv-card">
+                        <h3 class="h3">Хостел</h3>
+                        <p>Хостел "Высотка" — это бюджетный хостел, расположенный рядом с вокзалом.</p>
+                        <img src="../docs/assets/photo/hostel/entering.png" alt="hostel">
+                        <a href="../index.html"><button class="button">Подробнее</button></div></a>
+                    <div class="card serv-card">
+                        <h3 class="h3">Кафе</h3>
+                        <p>В эконом-столовой подают сытные обеды: первое, второе, свежие салаты и домашнюю выпечку по доступным ценам.</p>
+                        <img src="../docs/assets/scss/assets/cafe1.jpg" alt="cafe">
+                        <a href="../cafe/index.html"><button class="button">Подробнее</button></div></a>
+                    <div class="card serv-card">
+                        <h3 class="h3">Спортивный комплекс</h3>
+                        <p>У нас есть тренажёрный зал, настольный теннис, футбольное поле, волейбольное поле и большой теннис со снаряжением для каждого вида спорта</p>
+                        <img src="../docs/assets/photo/gym/gym2.jpg" alt="gym">
+                        <a href="../gym/index.html"><button class="button">Подробнее</button></div></a>
+                    <div class="card serv-card">
+                        <h3 class="h3">Баня</h3>
+                        <p>Присутствует баня с купелью за 1800 рублей в час.</p>
+                        <img src="../docs/assets/photo/sauna/sauna_photo10.jpg" alt="sauna">
+                        <a href="../sauna/index.html"><button class="button">Подробнее</button></div></a>
                     </div>
-                    
-            </section>
+                </div>
+
+        </section>
     </main>
 
     <footer class="footer" id="location">
