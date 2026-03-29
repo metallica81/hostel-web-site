@@ -553,6 +553,16 @@ section.room-section {
   flex: 1 1 0;
   min-width: 0;
 }
+.serv-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.room-container .card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .serv-card {
     width: 30%;
