@@ -425,6 +425,9 @@ section.room-section {
 #services .wrapper {
   gap: 30px;
 }
+#services {
+  margin-bottom: 20px;
+}
 .wrapper img {
   width: 100%;
 }
@@ -475,6 +478,9 @@ section.room-section {
 }
 .room-container .wrapper {
   gap: 30px;
+}
+.room-section {
+  padding-bottom: 40px;
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .room-container {
