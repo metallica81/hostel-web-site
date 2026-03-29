@@ -467,6 +467,15 @@ section.room-section {
 .room-container h2 {
   padding-block: 20px;
 }
+.room-price {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.room-container .wrapper {
+  gap: 30px;
+}
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .room-container {
     width: 90%;
@@ -548,10 +557,12 @@ section.room-section {
 }
 
 .serv-card {
-  justify-content: space-between;
   height: 630px;
   flex: 1 1 0;
   min-width: 0;
+}
+.serv-card p {
+  min-height: 100px;
 }
 .serv-card img {
   width: 100%;
