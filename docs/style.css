@@ -426,7 +426,7 @@ section.room-section {
   gap: 30px;
 }
 .wrapper img {
-  width: 261px;
+  width: 100%;
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .wrapper img {
@@ -557,6 +557,10 @@ section.room-section {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
+}
+.room-container .card {
+  flex: 1 1 0;
+  min-width: 0;
 }
 .room-container .card img {
   width: 100%;
