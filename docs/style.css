@@ -420,9 +420,13 @@ section.room-section {
   margin-inline: auto;
   display: flex;
   gap: 160px;
+  justify-content: center;
+}
+#services .wrapper {
+  gap: 30px;
 }
 .wrapper img {
-  width: 281px;
+  width: 261px;
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .wrapper img {
@@ -546,6 +550,8 @@ section.room-section {
 .serv-card {
   justify-content: space-between;
   height: 630px;
+  flex: 1 1 0;
+  min-width: 0;
 }
 @media only screen and (min-width: 757px) and (max-width: 1299px) {
   .serv-card {
