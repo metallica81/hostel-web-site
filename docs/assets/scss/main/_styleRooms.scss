@@ -2,23 +2,19 @@
 @use '../mixins' as mixins;
 
 section.room-section {
-    height: 677px;
     width: 100%;
+    padding-block: 50px;
     background-color: variables.$backgroun-color;
     @include mixins.screen-respond(large-medium-screens) {
-        aspect-ratio: 16/10;
         height: auto;
     }
     @include mixins.screen-respond(medium-screens) {
-        aspect-ratio: 16/10;
         height: auto;
     }
     @include mixins.screen-respond(handhelds) {
-        aspect-ratio: 16/10;
         height: auto;
     }
     @include mixins.screen-respond(phones) {
-        aspect-ratio: 16/10;
         height: auto;
     }
 }
@@ -53,6 +49,29 @@ section.room-section {
         gap: 60px;
         flex-direction: column;
         margin-inline: auto;
+    }
+}
+
+.room-price {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 40px;
+    padding: 12px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+
+    &__amount {
+        font-size: 32px;
+        font-weight: 700;
+        font-family: 'Oswald', serif;
+        color: variables.$font-orange;
+    }
+    &__label {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.85);
     }
 }
 

@@ -6,7 +6,7 @@ Domain: vysotka-bratsk.ru
 
 ## Structure
 - `/index.html` — main hostel page
-- `/cafe/index.html` — cafe "Пюрешка" page
+- `/cafe/index.html` — cafe "Смак" page
 - `/gym/index.html` — sports complex "Спортхолл" page
 - `/sauna/index.html` — sauna page
 - `/docs/` — assets (CSS, SCSS, JS, images, SVGs)
