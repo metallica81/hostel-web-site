@@ -775,6 +775,7 @@ section.room-section {
 .phoneNums {
   display: flex;
   flex-direction: column;
+  list-style: none;
   gap: 20px;
   text-decoration: underline;
   padding-left: 20px;
